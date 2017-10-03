@@ -45,7 +45,7 @@ class MediaItemViewController: UITableViewController {
     }
 
     private func updateViewModel() {
-        let titleRow = editableRowIfSupported(title: NSLocalizedString("Title", comment: "Noun. Label for the title of a media asset (image / video)"),
+        let titleRow = editableRowIfSupported(title: Strings.title.locWithComment("Noun. Label for the title of a media asset (image / video)"),
                                               value: mediaMetadata.title,
                                               action: editTitle())
         let captionRow = editableRowIfSupported(title: NSLocalizedString("Caption", comment: "Noun. Label for the caption for a media asset (image / video)"),
